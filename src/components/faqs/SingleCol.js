@@ -9,7 +9,7 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
-import Header from "../headers/light.js";
+
 import Footer from "components/footers/SimpleFiveColumn.js";
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
@@ -77,7 +77,6 @@ export default ({
   return (
 
     <Container>
-      <Header />
       <ContentWithPaddingXl>
         <Column>
           <HeaderContent>

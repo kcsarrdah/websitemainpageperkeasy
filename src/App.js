@@ -15,7 +15,10 @@ import SignupPage from "pages/Signup.js";
 import AboutUsPage from "pages/AboutUs.js";
 import ContactUsPage from "pages/ContactUs.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
+import Pricing from "components/pricing/TwoPlansWithDurationSwitcher";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import Footer from "components/footers/SimpleFiveColumn.js";
+import Careers from "components/careers/careers.js";
 export default function App() {
   return (
     <Router>
@@ -54,6 +57,13 @@ export default function App() {
         </Route>
         <Route path="/faq" exact>
         <FAQ2 />
+        </Route>
+        <Route path="/pricing" exact>
+        <Pricing />
+        <Footer/>
+        </Route>
+        <Route path="/careers" exact>
+        <Careers />
         </Route>
     </Switch>
   </Router>

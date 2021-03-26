@@ -2,7 +2,7 @@ import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
 import GetStarted from "components/cta/GetStarted";
-import Pricing from "components/pricing/TwoPlansWithDurationSwitcher";
+//import Pricing from "components/pricing/TwoPlansWithDurationSwitcher";
 import Footer from "components/footers/SimpleFiveColumn.js";
 import Features from "components/features/DashedBorderSixFeatures";
 
@@ -11,7 +11,6 @@ export default () => {
     <AnimationRevealPage>
       <Hero roundedHeaderButton={false} />
       <Features />
-      <Pricing />
       <GetStarted />
       <Footer />
     </AnimationRevealPage>

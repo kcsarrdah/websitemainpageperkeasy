@@ -19,7 +19,7 @@ const ColumnHeading = tw.h5`font-bold`;
 
 const LinkList = tw.ul`mt-4 text-sm font-medium`;
 const LinkListItem = tw.li`mt-3`;
-const Link = tw.a`border-b-2 border-transparent hocus:text-orange-500 hocus:border-orange-500 pb-1 transition duration-300`;
+const Link = tw.a`border-b-2 border-transparent hocus:text-orange-300 hocus:border-orange-300 pb-1 transition duration-300`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
@@ -84,7 +84,7 @@ export default () => {
               <Link href="/about-us">Company</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/contact-us">Careers</Link>
+              <Link href="/careers">Careers</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/blog">Blog</Link>
