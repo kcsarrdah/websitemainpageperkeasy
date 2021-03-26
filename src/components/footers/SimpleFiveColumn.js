@@ -64,9 +64,6 @@ export default () => {
           <ColumnHeading>Product</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="/">Homepage</Link>
-            </LinkListItem>
-            <LinkListItem>
               <Link href="/faq">FAQs</Link>
             </LinkListItem>
             <LinkListItem>
@@ -81,13 +78,16 @@ export default () => {
           <ColumnHeading>About Perkeasy</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="/about-us">Company</Link>
+              <Link href="/about-us">About Us</Link>
+            </LinkListItem>
+            <LinkListItem>
+              <Link href="/blog">Blog</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/careers">Careers</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/blog">Blog</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </LinkListItem>
           </LinkList>
         </Column>
