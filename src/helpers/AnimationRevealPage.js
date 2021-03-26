@@ -42,7 +42,7 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
           x: inView && 0
         }
       }}
-      transition={{ type: "spring", damping: 50 }}
+      transition={{ type: "spring", damping: 25 }}
       ref={ref}
     >
       {children}

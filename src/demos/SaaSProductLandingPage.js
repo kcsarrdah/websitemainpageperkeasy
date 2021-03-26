@@ -10,7 +10,6 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero roundedHeaderButton={false} />
-
       <Features />
       <Pricing />
       <GetStarted />

@@ -8,6 +8,8 @@ import { ReactComponent as UserIcon } from "feather-icons/dist/icons/user.svg";
 import { ReactComponent as TagIcon } from "feather-icons/dist/icons/tag.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-3.svg";
+import Header from "../headers/light.js";
+import Footer from "components/footers/SimpleFiveColumn.js";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -23,7 +25,7 @@ const Image = styled.div(props => [
   tw`bg-cover bg-center h-80 lg:h-64 rounded rounded-b-none`
 ]);
 
-const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
+const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-orange-300 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
 const MetaContainer = tw.div`flex items-center`;
 const Meta = styled.div`
   ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
@@ -47,7 +49,7 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "Blog",
-  heading = <>We Love <span tw="text-primary-500">Writing.</span></>,
+  heading = <>We Love <span tw="text-orange-500">Writing.</span></>,
   description = "Some amazing blog posts that are written by even more amazing people.",
 
 }) => {
@@ -82,6 +84,7 @@ export default ({
   ];
   return (
     <Container>
+      <Header />
       <Content>
         <HeadingInfoContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
@@ -115,6 +118,7 @@ export default ({
       </Content>
       <DecoratorBlob1 />
       <DecoratorBlob2 />
+      <Footer />
     </Container>
   );
 };

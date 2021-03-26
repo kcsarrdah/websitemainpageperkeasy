@@ -6,6 +6,8 @@ import LogoImage from "../../images/logo.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as InstagramIcon } from "../../images/Instagram-icon.svg";
+import { ReactComponent as LinkedinIcon } from "../../images/linkedin-icon.svg";
 
 const Container = tw.div`relative bg-gray-200 -mx-8 -mb-8 px-8`;
 const FiveColumns = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 flex flex-wrap justify-between`;
@@ -41,14 +43,20 @@ export default () => {
             <LogoText>Perkeasy</LogoText>
           </LogoContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/perkeasy" target = "_blank">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink href="https://twitter.com/perkeasy" target = "_blank">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink href="https://youtube.com" target = "_blank">
               <YoutubeIcon />
+            </SocialLink>
+            <SocialLink href="https://www.instagram.com/perkeasy/" target = "_blank">
+              <InstagramIcon />
+            </SocialLink>
+            <SocialLink href="https://www.linkedin.com/company/perkeasy/about/" target = "_blank">
+              <LinkedinIcon />
             </SocialLink>
           </SocialLinksContainer>
         </WideColumn>
@@ -56,10 +64,16 @@ export default () => {
           <ColumnHeading>Product</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Homepage</Link>
+              <Link href="/">Homepage</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">FAQs</Link>
+              <Link href="/faq">FAQs</Link>
+            </LinkListItem>
+            <LinkListItem>
+              <Link href="/terms-of-service">Terms Of Service</Link>
+            </LinkListItem>
+            <LinkListItem>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </LinkListItem>
           </LinkList>
         </Column>
@@ -67,13 +81,13 @@ export default () => {
           <ColumnHeading>About Perkeasy</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Company</Link>
+              <Link href="/about-us">Company</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Careers</Link>
+              <Link href="/contact-us">Careers</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Blog</Link>
+              <Link href="/blog">Blog</Link>
             </LinkListItem>
           </LinkList>
         </Column>

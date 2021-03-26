@@ -9,6 +9,8 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
+import Header from "../headers/light.js";
+import Footer from "components/footers/SimpleFiveColumn.js";
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
 const Heading = tw(SectionHeading)`w-full`;
@@ -21,13 +23,13 @@ const FAQSContainer = tw.dl`mt-12 max-w-4xl relative`;
 const FAQ = tw.div`cursor-pointer select-none mt-5 px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800 hover:text-gray-900 bg-gray-200 hover:bg-gray-300 transition duration-300`;
 const Question = tw.dt`flex justify-between items-center`;
 const QuestionText = tw.span`text-lg lg:text-xl font-semibold`;
-const QuestionToggleIcon = motion.custom(styled.span`
+const QuestionToggleIcon = motion(styled.span`
   ${tw`ml-2 transition duration-300`}
   svg {
     ${tw`w-6 h-6`}
   }
 `);
-const Answer = motion.custom(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
+const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-relaxed`);
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-56 w-56 opacity-15 transform translate-x-2/3 -translate-y-12 text-teal-400`}
@@ -41,7 +43,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default ({
   subheading = "FAQS",
   heading = "You have Questions ?",
-  description = "And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  description = `And we have got answers to all of them. Hopefully. If you cant find your question here, feel free to contact us!`,
   faqs = [
     {
       question: "Is lunch provided free of cost ?",
@@ -73,7 +75,9 @@ export default ({
   };
 
   return (
+
     <Container>
+      <Header />
       <ContentWithPaddingXl>
         <Column>
           <HeaderContent>
@@ -120,8 +124,9 @@ export default ({
           </FAQSContainer>
         </Column>
       </ContentWithPaddingXl>
-      <DecoratorBlob1/>
+      <DecoratorBlob1 />
       <DecoratorBlob2 />
+      <Footer />
     </Container>
   );
 };

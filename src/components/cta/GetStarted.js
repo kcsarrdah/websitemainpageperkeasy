@@ -23,9 +23,9 @@ const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 tr
 export default ({
   text = "Understand how Perkeasy can help you help your employees better.",
   primaryLinkText = "Book free consultation",
-  primaryLinkUrl = "http://timerse.com",
+  primaryLinkUrl = "/contact-us",
   secondaryLinkText = "Contact Us",
-  secondaryLinkUrl = "http://google.com",
+  secondaryLinkUrl = "/contact-us",
   pushDownFooter = true
 }) => {
   return (
