@@ -40,7 +40,7 @@ export default () => {
         <WideColumn>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Perkeasy</LogoText>
+            <Link href= "/"><LogoText>Perkeasy</LogoText></Link>
           </LogoContainer>
           <SocialLinksContainer>
             <SocialLink href="https://www.facebook.com/perkeasy" target = "_blank">

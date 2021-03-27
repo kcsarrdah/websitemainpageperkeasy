@@ -1,14 +1,12 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import {css} from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading as HeadingTitle, Subheading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as UserIcon } from "feather-icons/dist/icons/user.svg";
 import { ReactComponent as TagIcon } from "feather-icons/dist/icons/tag.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-3.svg";
-import Header from "../headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
 
 const Container = tw.div`relative`;
@@ -47,7 +45,7 @@ const DecoratorBlob2 = tw(
   SvgDecoratorBlob2
 )`-z-10 absolute top-0 left-0 w-48 h-48 transform -translate-x-32 translate-y-full opacity-25`;
 
-export default ({
+export default({
   subheading = "Blog",
   heading = <>We Love <span tw="text-orange-500">Writing.</span></>,
   description = "Some amazing blog posts that are written by even more amazing people.",
@@ -61,7 +59,7 @@ export default ({
       category: "SEO",
       title: "Optimizing your website for your main keyword",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://reddit.com"
+      url: "/defaultBlog"
     },
     {
       imageSrc:
@@ -70,7 +68,7 @@ export default ({
       category: "Advertising",
       title: "Creating The perfect advertisement campaign",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://timerse.com"
+      url: "/defaultBlog"
     },
     {
       imageSrc:
@@ -79,12 +77,11 @@ export default ({
       category: "Social Media",
       title: "Efficient management of your social media assets",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://timerse.com"
+      url: "/defaultBlog"
     }
   ];
   return (
     <Container>
-      <Header />
       <Content>
         <HeadingInfoContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
@@ -116,8 +113,6 @@ export default ({
           ))}
         </ThreeColumn>
       </Content>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
       <Footer />
     </Container>
   );

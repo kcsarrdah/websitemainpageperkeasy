@@ -8,7 +8,7 @@ import Features from "components/features/DashedBorderSixFeatures";
 
 export default () => {
   return (
-    <AnimationRevealPage>
+    <AnimationRevealPage disabled>
       <Hero roundedHeaderButton={false} />
       <Features />
       <GetStarted />
