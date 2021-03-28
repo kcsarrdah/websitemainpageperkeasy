@@ -1,8 +1,8 @@
 import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
-import Header from "components/headers/light.js";
-import Footer from "components/footers/SimpleFiveColumn.js";
+//import Header from "components/headers/light.js";
+//import Footer from "components/footers/SimpleFiveColumn.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
@@ -17,8 +17,8 @@ import CustomerLoveIconImage from "images/simple-icon.svg";
 const Subheading = tw.span`uppercase tracking-wider text-sm`;
 export default () => {
   return (
-    <AnimationRevealPage>
-      <Header />
+    <AnimationRevealPage disabled>
+      {/* <Header /> */}
       <MainFeature1
         subheading={<Subheading>About Perkeasy</Subheading>}
         heading="We are a modern Employee Benefits and Perks Management Agency."
@@ -60,7 +60,7 @@ export default () => {
       <TeamCardGrid 
         subheading={<Subheading>Our Team</Subheading>}
       />
-      <Footer />
+      {/* <Footer /> */}
     </AnimationRevealPage>
   );
 };

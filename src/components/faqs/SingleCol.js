@@ -10,6 +10,7 @@ import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
 
+import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
@@ -75,7 +76,6 @@ export default ({
   };
 
   return (
-
     <Container>
       <ContentWithPaddingXl>
         <Column>
@@ -123,9 +123,7 @@ export default ({
           </FAQSContainer>
         </Column>
       </ContentWithPaddingXl>
-      <DecoratorBlob1 />
-      <DecoratorBlob2 />
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 };

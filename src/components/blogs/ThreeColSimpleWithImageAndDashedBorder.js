@@ -113,7 +113,7 @@ export default({
           ))}
         </ThreeColumn>
       </Content>
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 };

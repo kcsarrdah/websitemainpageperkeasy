@@ -76,7 +76,7 @@ export default ({
   privacyPolicyUrl = "/privacy-policy",
   signInUrl = "/login"
 }) => (
-  <AnimationRevealPage>
+  <AnimationRevealPage disabled>
     <Container>
       <Content>
         <MainContainer>
@@ -132,6 +132,6 @@ export default ({
         </IllustrationContainer>
       </Content>
     </Container>
-    <Footer />
+    {/* <Footer /> */}
   </AnimationRevealPage>
 );

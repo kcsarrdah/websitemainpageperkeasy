@@ -14,8 +14,8 @@ const Phone = tw.span`text-sm mt-0 block text-gray-500`;
 
 export default () => {
   return (
-    <AnimationRevealPage>
-      <Header />
+    <AnimationRevealPage disabled>
+      {/* <Header /> */}
       <ContactUsForm />
       <ContactDetails
         cards={[
@@ -99,7 +99,7 @@ export default () => {
           }
         ]}
       />
-      <Footer />
+      {/* <Footer /> */}
     </AnimationRevealPage>
   );
 };

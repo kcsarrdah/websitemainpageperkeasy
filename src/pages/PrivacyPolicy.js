@@ -36,8 +36,8 @@ const Text = styled.div`
 `;
 export default ({ headingText = "Privacy Policy" }) => {
   return (
-    <AnimationRevealPage>
-      <Header />
+    <AnimationRevealPage disabled>
+      {/* <Header /> */}
       <Container>
         <ContentWithPaddingXl>
           <HeadingRow>
@@ -385,7 +385,7 @@ export default ({ headingText = "Privacy Policy" }) => {
           </Text>
         </ContentWithPaddingXl>
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </AnimationRevealPage>
   );
 };

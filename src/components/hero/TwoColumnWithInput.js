@@ -17,7 +17,7 @@ const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex-1 flex flex-col justify-center lg:self-end`;
 
 const Heading = tw.h1`font-bold text-3xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-900 leading-tight`;
-const Paragraph = tw.p`my-5 lg:my-8 text-base xl:text-lg`;
+const Paragraph = tw.p`my-8 lg:my-8 text-base xl:text-lg`;
 const imageSrc = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80";
 
 const Actions = styled.div`
@@ -40,7 +40,7 @@ const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
 export default ({ roundedHeaderButton }) => {
   return (
     <>
-      <Header roundedHeaderButton={roundedHeaderButton} />
+      {/* <Header roundedHeaderButton={roundedHeaderButton} /> */}
       <Container>
         <TwoColumn>
           <LeftColumn tw = "px-10">
@@ -62,13 +62,13 @@ export default ({ roundedHeaderButton }) => {
           </RightColumn>
         </TwoColumn>
 
-        <TwoColumn>
+        <TwoColumn tw="pt-0">
           <LeftColumn>
             <IllustrationContainer>
               <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={prototypeIllustrationImageSrc} alt="Design Illustration" />
             </IllustrationContainer>
           </LeftColumn>
-          <RightColumn tw = "px-10">
+          <RightColumn tw = "px-10 pb-40">
             <Heading>
               Better People leadership.
             </Heading>
@@ -78,7 +78,7 @@ export default ({ roundedHeaderButton }) => {
           </RightColumn>
         </TwoColumn>
 
-        <TwoColumn>
+        <TwoColumn tw="pt-0">
           <LeftColumn tw = "px-10">
             <Heading>
               Great for Diverse, Modern Teams
@@ -94,13 +94,13 @@ export default ({ roundedHeaderButton }) => {
           </RightColumn>
         </TwoColumn>
 
-        <TwoColumn>
+        <TwoColumn tw="pt-0">
           <LeftColumn>
             <IllustrationContainer>
               <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={StatsIllustrationSrc} alt="Design Illustration" />
             </IllustrationContainer>
           </LeftColumn>
-          <RightColumn tw= "px-20"styles="padding-left:50px;">
+          <RightColumn tw = "px-20 pb-40" styles="padding-left:50px;">
             <Heading>
               Your finance team will thank you.
             </Heading>
@@ -109,7 +109,6 @@ export default ({ roundedHeaderButton }) => {
             </Paragraph>
           </RightColumn>
         </TwoColumn>
-        <DecoratorBlob1 />
       </Container>
     </>
   );

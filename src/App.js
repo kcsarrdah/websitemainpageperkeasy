@@ -6,7 +6,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
 import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
+import Header from "components/headers/light.js";
 import Blog2 from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Dblog from "components/blogs/defaultblog.js";
 import FAQ2 from "components/faqs/SingleCol.js";
@@ -20,9 +22,12 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 import ConsultationForm from "components/forms/consultationForm.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
 import Careers from "components/careers/careers.js";
+import AnimationRevealPage from "helpers/AnimationRevealPage";
 export default function App() {
   return (
     <Router>
+      <AnimationRevealPage disabled>
+      <Header />
     <Switch>
 
       <Route path="/" exact>
@@ -30,10 +35,12 @@ export default function App() {
       </Route>
 
       <Route path="/login" exact>
+        <br />
       <LoginPage />
         </Route>
 
         <Route path="/signup" exact>
+          <br />
           <SignupPage />
         </Route>
 
@@ -61,7 +68,7 @@ export default function App() {
         </Route>
         <Route path="/pricing" exact>
         <Pricing />
-        <Footer/>
+        {/* <Footer/> */}
         </Route>
         <Route path="/careers" exact>
         <Careers />
@@ -75,6 +82,8 @@ export default function App() {
 
 
     </Switch>
+    <Footer />
+    </AnimationRevealPage>
   </Router>
   )
 }
